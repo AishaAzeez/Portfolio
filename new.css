@@ -1,0 +1,289 @@
+------------------------------------------------------*/
+h1,h2,h3,h4 {
+    color: var(#ffffff);
+    font-weight: 700;
+  }
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+body,h1,h2,h3,h4,ul,p {
+    margin: 0;
+    padding: 0;
+  }
+ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: #676767;
+  }
+main {
+    overflow: hidden;
+  }
+body {
+    background-color: #1a1a1a;
+    font-family: "Space Grotesk", sans-serif;
+    font-size:  1.6rem;
+    color: #676767;
+    margin-top:9.5rem;
+    line-height: 1.2;
+  }
+    .container {
+    width: 90%;
+    max-width:98rem;
+    margin: auto;
+  }
+   .section {
+    padding: 5rem 0;
+  }
+  
+  .sectionheader {
+    margin: 8rem 0;
+    text-align: center;
+    color: rgba(218, 165, 32, 0.853);
+  }
+  
+  .sectionsubtitle {
+    font-weight:700;
+    font-size:1.6rem;
+    position: relative;
+    color: rgba(218, 165, 32, 0.853);
+
+  }
+  
+  .sectionsubtitle::after {
+    position: absolute;
+    content: "";
+    width: 10rem;
+    height: 0.2rem;
+    background-color:#ffffff;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .d-grid {
+    display: grid;
+    gap: 3rem;
+  }
+  
+  
+  
+  
+  .header {
+    background-color:#1a1a1a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    height:10rem;
+    z-index: 1000;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .navlist {
+    display: flex;
+    column-gap:2rem;
+  }
+ .navlink:hover {
+    color: goldenrod;
+    border-bottom: 1px solid;
+  }
+  
+  
+ 
+  
+  .homecontent {
+    text-align: center;
+  }
+  .hi{
+    font-size: medium;
+    text-align: center;
+
+  }
+  .hometitle {
+    font-size:clamp(3rem, 8vw, 5rem);
+    margin-bottom: 5rem;
+    position: relative;
+    color: white;
+
+  }
+
+   .homedesc{
+    margin-bottom: 5rem;
+    margin-top: -4rem ;
+ }
+  
+  .linefirst {
+    border-top: 1px solid rgba(218, 165, 32, 0.853);
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+  }
+  
+ 
+  .aboutcontent {
+    max-width: 50rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .abouttitle {
+    font-size: 3.2rem;
+    margin-bottom:1rem;
+    color: white;
+  }
+  
+  .aboutdescription {
+    margin-bottom: 3rem;
+  }
+  
+  .Internships {
+    justify-self: center;
+  }
+  
+  .interntitle {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: white;
+  }
+  
+  .internwrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .intercontent {
+    padding: 3rem;
+  }
+  
+  .internitem {
+    margin-bottom: 1rem;
+  }
+  
+  .intersubtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .internitem i {
+    color:  rgb(139, 105, 26);
+  }
+  .skill1card {
+    background-color: #242424;
+    padding: 5rem 3.5rem;
+    width: 50%;
+    max-width: 30rem;
+    justify-self: center;
+  }
+  .skill1card:hover {
+    background-color: goldenrod;
+  }
+  
+  .skill1card:hover .skill1link {
+    color: white
+  }
+  
+  .skill1icon {
+    font-size: 9.5rem;
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+    margin-left: 44px;
+  }
+  
+  .skill1title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    margin-top: -35px;
+    color: white;
+  }
+  
+  
+  .projectcontent {
+    width: 100%;
+    max-width: 30rem;
+    justify-self: center;
+  }
+  
+  .projectimg {
+    margin-bottom: 2rem;
+    
+  }
+  
+  .projecttitle {
+    color: var(--color-white);
+    font-size: var(--fs-lg);
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  .projectdescription {
+    margin-bottom: 2rem;
+  }
+  
+  
+  
+  .footer {
+    background-color:#151515;;
+    padding: 5rem 0;
+  }
+   
+  .footerwrapper {
+    border-bottom: 1px solid  #242424;
+    padding: 5rem 0;
+    gap: 5rem;
+  } 
+  
+  .footertitle {
+    font-size:2rem;
+    margin-bottom: 2rem;
+   color: rgba(218, 165, 32, 0.853)
+  }
+  
+
+    @media screen and (min-width: 560px) {
+        .skill1wrapper {
+          grid-template-columns: repeat(2, 250px);
+          justify-content: center;
+        } 
+    
+         .footerwrapper {
+            grid-template-columns: repeat(2, 1fr);
+          } 
+        }
+
+
+
+ @media screen and (min-width: 968px) {
+            .aboutwrapper {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          
+            .aboutcontent {
+              margin: 0;
+            }
+          
+            .aboutcontent
+             {
+              text-align: initial;
+            }
+             .footerwrapper {
+                grid-template-columns: repeat(3, 1fr);
+              } 
+            
+          }
