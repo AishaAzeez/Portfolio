@@ -35,7 +35,7 @@ body {
     margin: auto;
   }
    .section {
-    padding: 5rem 0;
+    padding: -3rem 0;
   }
   
   .sectionheader {
@@ -133,6 +133,7 @@ body {
     gap: 5rem;
   }
   
+  
  
   .aboutcontent {
     max-width: 50rem;
@@ -192,7 +193,7 @@ body {
     justify-self: center;
   }
   .skill1card:hover {
-    background-color: goldenrod;
+    background-color: rgba(218, 165, 32, 0.741);
   }
   
   .skill1card:hover .skill1link {
@@ -209,6 +210,7 @@ body {
   .skill1title {
     font-size: 2rem;
     margin-bottom: 3rem;
+    text-align: center;
     margin-top: -35px;
     color: white;
   }
